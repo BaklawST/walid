@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Image</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .image-container {
+            width: 20%; /* Adjust margin by reducing width */
+            height: 100vh; /* Covers 50% of the page height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .image-container img {
+            width: auto;
+            height: 100%;
+            max-width: 100%;
+            object-fit: contain; /* Ensures full image is visible without cropping */
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="lol.png" alt="Placeholder Image">
+    </div>
+</body>
+</html>
